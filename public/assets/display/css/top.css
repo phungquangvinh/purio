@@ -1,0 +1,544 @@
+@charset 'UTF-8';
+
+/* ================================================================================
+
+	トップページ
+
+================================================================================ */
+
+
+
+
+/* ================================================================================
+
+	Site origin 不要設定解除
+	※案件によって使い分けてください。
+	※価格表のcssと一緒に使うとバグりますので、その時は個別に設定すると吉です。
+
+================================================================================ */
+
+.panel-grid,
+.panel-grid-cell,
+.so-panel{
+	margin:0 !important;
+}
+
+
+
+
+
+/* ================================================================================
+
+	レイアウト
+
+================================================================================ */
+/* PC設定
+----------------------------------------------- */
+@media (min-width: 768px) {
+	#wrapper{
+		background: url(../img/top_bg_03.png) right 126px no-repeat,
+		url(../img/top_bg_04.png) left 460px no-repeat,
+		url(../img/top_bg_05.png) left 3020px no-repeat,
+		url(../img/top_bg_06.png) right 2620px no-repeat,
+		url(../img/top_bg_02.png) center 1100px no-repeat;
+	}
+	main.outer_wrap{
+		max-width:1920px;
+		width:100%;
+		background:url() center top no-repeat;
+		display:block;
+	}
+	.inner_wrap{
+	}
+}
+
+
+
+
+/* SP設定
+----------------------------------------------- */
+@media (max-width: 767px) {
+	#wrapper{
+	}
+	main.outer_wrap{
+		width:100%;
+		background:url() center top no-repeat;
+	}
+	.inner_wrap{
+	}
+	.sp_logo {
+		position: absolute;
+		z-index: 0;
+		top: 50px;
+		left: 50%;
+		margin-left: -75px;
+		width: 150px;
+	}
+}
+
+
+
+
+/* ================================================================================
+
+	タイトル
+
+================================================================================ */
+
+
+
+
+/* ================================================================================
+
+	row_01 スライダー
+
+================================================================================ */
+/* PC */
+@media (min-width: 768px) {
+	#row_01 #metaslider_pc {
+		position: relative;
+		z-index: 0;
+	}
+	#row_01 #metaslider_sp {
+		display: none;
+	}
+}
+
+
+/* SP */
+@media (max-width: 767px) {
+	#row_01 #metaslider_pc {
+		display: none;
+	}
+	#row_01 #metaslider_sp {
+		position: relative;
+		z-index: -10;
+	}
+}
+
+
+
+
+/* ================================================================================
+
+	row_02 さぼてんcaféについて
+
+================================================================================ */
+/* PC */
+@media (min-width: 768px) {
+	#row_02 {
+		position: relative;
+		z-index: 10;
+		margin: 0 auto;
+		text-align: center;
+		height: 478px;
+		background: url(../img/top_bg_01.png) center top no-repeat;
+		padding: 40px 0 0 0;
+		margin-top: -70px;
+	}
+	#row_02 h2{
+		font-size: 32px;
+		background: url(../img/top_bg_01.png) center bottom no-repeat;
+		padding: 0 0 10px 0;
+		margin: 0 0 10px 0;
+	}
+	#row_02 h2 a{
+		color: #ffffff;
+	}
+	#row_02 a:hover {
+		text-decoration: none !important;
+	}
+	#row_02 h2 a:hover {
+		opacity: 0.5;
+		-webkit-transition: 0.3s ease-out 0s;
+		transition: 0.3s ease-out 0s;
+	}
+	#row_02 .item_03 a:hover {
+		opacity: 0.7;
+		-webkit-transition: 0.3s ease-out 0s;
+		transition: 0.3s ease-out 0s;
+	}
+}
+
+
+/* SP */
+@media (max-width: 767px) {
+	#row_02 {
+		position: relative;
+		z-index: 0;
+		text-align: center;
+		height: 320px;
+		background: url(../img/top_bg_01.png) center top no-repeat;
+		background-size: cover;
+		padding: 10px 0 0 0;
+		margin: -10px 0 0 0;
+	}
+	#row_02 .item_03 h2 {
+		font-size: 20px;
+		background: url(../img/h2_bg_01.png) center bottom no-repeat;
+		background-size: contain;
+		padding: 0 0 10px 0;
+		margin: 0 0 10px 0;
+	}
+	#row_02 .item_03 h2 a{
+		color: #ffffff;
+	}
+	#row_02 .item_03 a:hover {
+		text-decoration: none;
+	}
+	#row_02 .item_03 h2 a:hover {
+		opacity: 0.5;
+		-webkit-transition: 0.3s ease-out 0s;
+		transition: 0.3s ease-out 0s;
+	}
+	#row_02 .item_03 {
+		padding: 20px;
+	}
+	#row_02 .item_03 a:hover {
+		opacity: 0.7;
+		-webkit-transition: 0.3s ease-out 0s;
+		transition: 0.3s ease-out 0s;
+	}
+}
+
+
+
+
+/* ================================================================================
+
+	row_03 Cafe Time
+
+================================================================================ */
+/* PC */
+@media (min-width: 768px) {
+	#row_03 .panel-grid-cell { /* 隙間消し */
+		width: 100% !important;
+	}
+	#row_03 {
+		margin: 0 auto;
+		width: 1200px;
+		padding: 0;
+	}
+	#row_03 .item_04 img {
+		position: relative;
+		z-index: 100;
+		display: block;
+		margin: 0px 30px 0 0;
+		width: 85%;
+	}
+	#row_03 .item_05 {
+		margin: -30px 0 0 0;
+	}
+	#row_03 .item_05 .time {
+		color: #764e2e;
+		font-size: 25px;
+		font-weight: 700;
+		font-family: "游明朝", "YuMincho", "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", "Sawarabi Mincho", serif;
+		margin: 0 0 20px 0;
+	}
+	#row_03 .item_05 .huki {
+		position: relative;
+		left: 250px;
+		margin: -60px 0 0 250px;
+	}
+	#row_03 .item_05 .name {
+		margin: 0 0 20px 0;
+	}
+	#row_03 .item_05 .text {
+		color: #764e2e;
+		line-height: 2;
+		letter-spacing: 0em;
+		margin: 0 0 20px 0;
+	}
+}
+
+
+/* SP */
+@media (max-width: 767px) {
+	#row_03 .panel-grid-cell { /* 隙間消し */
+	}
+	#row_03 {
+		background: url(../img/bg_sp_01.jpg) center top repeat;
+		padding: 40px 20px 40px 20px;
+		margin: -20px 0 0 0;
+	}
+	#row_03 .item_04 img {
+		width: 100%;
+	}
+	#row_03 .item_05 {
+	}
+	#row_03 .item_05 .time {
+		color: #764e2e;
+		font-size: 25px;
+		font-weight: 700;
+		font-family: "游明朝", "YuMincho", "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", "Sawarabi Mincho", serif;
+		margin: 0 0 20px 0;
+	}
+	#row_03 .item_05 .name {
+		margin: 20px 0 20px 0;
+	}
+	#row_03 .item_05 .text {
+		color: #764e2e;
+		line-height: 2;
+		letter-spacing: 0em;
+		margin: 0 0 20px 0;
+	}
+	#row_03 .item_05 .banner a {
+		display: block;
+		text-align: center;
+	}
+}
+
+
+
+/* ================================================================================
+
+	row_04 Bar Time
+
+================================================================================ */
+/* PC */
+@media (min-width: 768px) {
+	#row_04 .panel-grid-cell { /* 隙間消し */
+		width: 100% !important;
+	}
+	#row_04 {
+		margin: 0 auto;
+		width: 1200px;
+		padding: 0;
+	}
+	#row_04 .item_07 img {
+		position: relative;
+		z-index: 100;
+		display: block;
+		margin: -20px 0 0 0;
+	}
+	#row_04 .item_06 {
+		width: 650px;
+		margin: 0 0 0 30px;
+	}
+	#row_04 .item_06 .time {
+		color: #ffffff;
+		font-size: 25px;
+		font-weight: 700;
+		font-family: "游明朝", "YuMincho", "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", "Sawarabi Mincho", serif;
+	}
+	#row_04 .item_06 .huki {
+		position: relative;
+		top: 0;
+		margin: -50px 0 0 300px;
+	}
+	#row_04 .item_06 .name {
+		margin: 0 0 20px 0;
+	}
+	#row_04 .item_06 .text {
+		color: #ffffff;
+		line-height: 2;
+		letter-spacing: 0em;
+		margin: 0 0 20px 0;
+	}
+	#row_04 .item_06 a img {
+		display: block;
+	}
+}
+
+
+/* SP */
+@media (max-width: 767px) {
+	#row_04 .panel-grid-cell { /* 隙間消し */
+		width: 100% !important;
+	}
+	#row_04 {
+		background: url(../img/bg_sp_02.jpg) center top repeat;
+		padding: 40px 20px 40px 20px;
+	}
+	#row_04 .item_07 img {
+		width: 100%;
+	}
+	#row_04 .item_06 {
+	}
+	#row_04 .item_06 .time {
+		color: #ffffff;
+		font-size: 25px;
+		font-weight: 700;
+		font-family: "游明朝", "YuMincho", "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", "Sawarabi Mincho", serif;
+		margin: 0 0 20px 0;
+	}
+	#row_04 .item_06 .name {
+		margin: 20px 0 20px 0;
+	}
+	#row_04 .item_06 .text {
+		color: #ffffff;
+		line-height: 2;
+		letter-spacing: 0em;
+		margin: 0 0 20px 0;
+	}
+	#row_04 .item_06 .banner a {
+		display: block;
+		text-align: center;
+		margin: 0 0 30px 0;
+	}
+}
+
+
+
+
+/* ================================================================================
+
+	row_05 3連バナー
+
+================================================================================ */
+/* PC */
+@media (min-width: 768px) {
+	#row_05 {
+		margin: 0 auto;
+		width: 1000px;
+		padding: 100px 0 60px 0;
+	}
+	#row_05 p a:hover {
+		opacity: 0.7;
+		-webkit-transition: 0.3s ease-out 0s;
+		transition: 0.3s ease-out 0s;
+	}
+}
+
+
+/* SP */
+@media (max-width: 767px) {
+	#row_05 {
+		padding: 30px 0 0 0;
+	}
+	#row_05 p a:hover {
+		opacity: 0.7;
+		-webkit-transition: 0.3s ease-out 0s;
+		transition: 0.3s ease-out 0s;
+	}
+}
+
+
+
+
+/* ================================================================================
+
+	row_06 ブログ
+
+================================================================================ */
+/* スクロールバー
+----------------------------------------------- */
+/* theme: "dark-2" */
+.top_news_box .mCS-dark-2.mCSB_scrollTools .mCSB_draggerRail {
+	width: 8px;/*スクロールバー背景の太さ*/
+	background-color: rgba(255,255,255,0.1);/*スクロールバー背景色*/
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.top_news_box .mCS-dark-2.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+	width: 8px;/*スクロールバーの太さ*/
+	background-color: rgba(255,255,255,0.3);/*スクロールバー色*/
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.top_news_box .mCS-dark-2.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+	background-color: rgba(255,255,255,0.3);
+}/*ホバー時スクロールバー色*/
+.top_news_box .mCS-dark-2.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar, .top_news_box .mCS-dark-2.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+	background-color: rgba(255,255,255,0.3);
+}/*ドラッグ時スクロールバー色*/
+.top_news_box .mCS-dark-2.mCSB_scrollTools .mCSB_buttonUp {
+	background-position: -112px 0;
+}
+.top_news_box .mCS-dark-2.mCSB_scrollTools .mCSB_buttonDown {
+	background-position: -112px -20px;
+}
+.top_news_box .mCS-dark-2.mCSB_scrollTools .mCSB_buttonLeft {
+	background-position: -120px -40px;
+}
+.top_news_box .mCS-dark-2.mCSB_scrollTools .mCSB_buttonRight {
+	background-position: -120px -56px;
+}
+/* ---------------------------------------- */
+
+
+/* PC */
+@media (min-width: 768px) {
+	#row_06 {
+		margin: 0 auto;
+		width: 921px;
+		height: 526px;
+		background: url(../img/top_img_12.jpg) center top no-repeat;
+	}
+	#panel-2-5-0-0 {
+	    position: absolute;
+	}
+	
+	#row_06 .top_news_box {
+		width: 620px;
+		height: 340px;
+		color: #ffffff;
+		margin: 130px 0 0 80px;
+	}
+	.top_news_box section {
+		padding: 20px 0;
+		border-bottom: 1px dotted #cccccc;
+	}
+	.top_news_box section:first-child {
+		padding-top: 0;
+	}
+	.top_news_box .entry-time time {
+		font-weight: 700;
+	}
+	.top_news_box section h3.entry-title a {
+	 color: #d56a49;
+	 font-size: 22px;
+	}
+	.top_news_box section .entry-content {
+		color: #ffffff;
+	}
+	.top_news_box p img {
+		max-width: 420px;
+		height: auto;
+	}
+}
+
+
+/* SP */
+@media (max-width: 767px) {
+	#row_06 {
+		margin: 0 auto;
+		width: 90%;
+		background-color: #353733;
+		margin-bottom: 30px;
+	}
+	#row_06 h3.widget-title {
+		text-align: center;
+		font-size: 24px;
+	}
+	#row_06 .top_news_box {
+		width: 100%;
+		height: 340px;
+		color: #ffffff;
+		padding: 30px 10px 30px 30px;
+	}
+	.top_news_box section {
+		padding: 20px 0;
+		border-bottom: 1px dotted #cccccc;
+	}
+	.top_news_box section:first-child {
+		padding-top: 0;
+	}
+	.top_news_box .entry-time time {
+		font-weight: 700;
+	}
+	.top_news_box section h3.entry-title a {
+		color: #d56a49;
+		font-size: 22px;
+	}
+	.top_news_box section .entry-content {
+		color: #ffffff;
+	}
+	.top_news_box p img {
+		max-width: 420px;
+		height: auto;
+	}
+}

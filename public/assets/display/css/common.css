@@ -1,0 +1,750 @@
+@charset 'UTF-8';
+@import url(//fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+@import url(//fonts.googleapis.com/earlyaccess/sawarabimincho.css);
+
+
+
+
+/* ================================================================================
+
+	やさしさゴシック手書き
+
+================================================================================ */
+@font-face{
+	font-family: 'YasashisaGothic-TEGAKI'; /* お好きな名前にしましょう */
+	src: url('../font/YasashisaGothic-TEGAKI.eot'); /* IE9以上用 */
+	src: url('../font/YasashisaGothic-TEGAKI.eot?#iefix') format('embedded-opentype'), /* IE8以前用 */
+		url('../font/YasashisaGothic-TEGAKI.woff') format('woff'), /* モダンブラウザ用 */
+		url('../font/YasashisaGothic-TEGAKI.otf') format('opentype'); /* iOS, Android用 */
+	font-weight: normal; /* 念の為指定しておきます */
+	font-style: normal;
+}
+
+
+
+
+/* ================================================================================
+
+	サイトスタイル
+
+================================================================================ */
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*:before,
+*:after {
+	 -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #f6f1ed;
+	color: #764e2e;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+	font-size:16px;
+	font-weight:300;
+	line-height:1.7;
+	letter-spacing: 0.1em;
+	word-wrap:break-word;
+	background: url(../img/bg_html.jpg) center top repeat;
+	font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "YasashisaGothic-TEGAKI", "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, Meiryo, sans-serif;	-moz-text-size-adjust: none;
+	overflow-x: hidden;
+}
+
+#wrapper {
+	position:relative;
+	max-width:1920px;
+	width:100%;
+	margin:0 auto;
+	min-height:100vh;
+	display:block;
+}
+
+h1{
+	margin:0;
+	font-weight:300;
+}
+h2, h3, h4 {
+	margin:0;
+	font-weight:700;
+}
+
+a:link,
+a:visited {
+	color: #d56a49;
+}
+a:hover,
+a:active {
+	color: #d56a49;
+	text-decoration: underline !important;
+}
+
+.container{
+  	height: 800px;
+}
+
+.left.carousel-control {
+    width: 30px;
+	position: absolute;
+	left: -80px;
+}
+.right.carousel-control{
+	width: 30px;
+	position: absolute;
+}
+.pg-2-2-3{
+	background: url(../img/top_bg_02.png) no-repeat;
+	background-position: -200px -160px;
+	background-size: 130%;
+}
+#pg-2-2 {
+}
+
+#pg-2-3 {
+	padding-top: 125px;
+}
+#pg-2-5 {
+	padding-bottom: 100px;
+}
+
+.pg-2-4-5 {
+	background-image: url(../img/top_bg_06.png);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+#pg-31-2 {
+	padding-bottom: 50px;
+}
+/* ================================================================================
+
+	display:none
+
+================================================================================ */
+/* PC
+----------------------------------------------- */
+@media (min-width: 768px) {
+	/* SP改行消し */
+	.br-pc {
+		display: none;
+	}
+
+	/* SPコンテンツ消し */
+	.pc_none {
+		display: none;
+	}
+}
+
+
+
+/* SP
+----------------------------------------------- */
+@media (max-width: 767px) {
+	/* PC改行消し */
+	.br-sp {
+		display: none;
+	}
+
+	/* PCコンテンツ消し */
+	.sp_none{
+		display: none;
+	}
+}
+
+
+
+
+/* ================================================================================
+
+	フロート回り込み解除 clearfix
+
+================================================================================ */
+.clearfix:after {
+	display: block;
+	clear: both;
+	height: 0px;
+	line-height: 0px;
+	visibility: hidden;
+	content: ".";
+	overflow: hidden;
+	float: none;
+}
+.clearfix {
+	display: block; /* for IE8 */
+}
+
+
+
+
+/* ================================================================================
+
+	Site origin 不要設定解除
+
+================================================================================ */
+.panel-grid,
+.panel-grid-cell,
+.so-panel {
+	margin:0 !important;
+}
+
+
+
+
+
+/* ================================================================================
+
+	エディター共通設定
+
+================================================================================ */
+p{
+	margin-bottom:16px;
+}
+p:last-child{
+	margin-bottom:0;
+}
+
+.aligncenter {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+
+img.alignright {
+	display: inline-block;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 16px;
+	margin-left: 24px;
+}
+
+img.alignleft {
+	display: inline-block;
+	margin-top: 0px;
+	margin-right: 24px;
+	margin-bottom: 16px;
+	margin-left: 0px;
+}
+
+
+
+
+/* ================================================================================
+
+	その他
+
+================================================================================ */
+/* SP */
+@media (max-width: 767px) {
+	body{
+		font-size:14px;
+	}
+	img {
+		max-width: 100%;
+		margin: 0 auto;
+		display: block;
+	}
+	h1, .h1 {
+		font-size: 19px;
+	}
+	h2, .h2 {
+		font-size: 18px;
+	}
+	h3, .h3 {
+		font-size: 17px;
+	}
+	h4, .h4 {
+		font-size: 16px;
+	}
+	h5, .h5 {
+		font-size: 14px;
+	}
+	h6, .h6 {
+		font-size: 11px;
+	}
+	p {
+		font-size: 14px;
+	}
+}
+
+
+
+
+
+/* ================================================================================
+
+	PCヘッダー
+
+================================================================================ */
+@media (min-width: 768px) {
+/* PC設定
+----------------------------------------------- */
+	header{
+		position:relative;
+		max-width:1920px;
+		width:100%;
+		
+	}
+
+
+/* H1
+----------------------------------------------- */
+	.header-h1 {
+		position: absolute;
+		z-index: 0;
+		top: 0;
+		left: 50%;
+		margin: 5px 0 0 220px;
+	}
+	.header-h1 h1 {
+		color: #5c392c;
+		font-size: 11px;
+		letter-spacing: 0em;
+	}
+
+
+/* IS装飾
+----------------------------------------------- */
+	.dish {
+		position: absolute;
+		z-index: 10;
+		top: 0;
+		left: 50%;
+		margin-top: 400px;
+		margin-left: 300px;
+	}
+
+
+/* グローバルナビゲーション
+----------------------------------------------- */
+	.pc_nav_wrap {
+		position: absolute;
+		z-index: 10;
+		top: 0;
+		left: 50%;
+		margin-left: -600px;
+	}
+	.pc_nav {
+		width: 248px;
+		height: 831px;
+		background: url(../img/gnavi_bg.png) center top no-repeat;
+	}
+	.pc_nav ul {
+		padding: 45px 0 0 20px;
+	}
+	.pc_nav ul li {
+		width: 208px;
+		list-style: none;
+	}
+	.pc_nav ul li a{
+		display: block;
+	}
+	.pc_nav ul li:first-child a { /* ロゴ */
+	}
+	.pc_nav ul li:nth-child(2) { /* 住所・営業時間 */
+		text-align: center;
+		color: #d56a49;
+		font-size: 14px;
+		letter-spacing: 0em;
+		margin: 20px 0 20px 0;
+	}
+	.pc_nav ul li a:hover {
+		opacity: 0.5;
+		-webkit-transition: 0.3s ease-out 0s;
+		transition: 0.3s ease-out 0s;
+	}
+	.sp_drawer{
+		display: none;
+	}
+
+
+	/* 予約ボタン
+	----------------------------------------------- */
+	.yoyaku_banner_01 a {
+		position: absolute;
+		z-index: 1000;
+		top: 0;
+		left: 50%;
+		margin-top: 675px;
+		margin-left: -560px;
+	}
+}
+
+
+
+
+/* ================================================================================
+
+	SPヘッダー
+
+================================================================================ */
+@media (max-width: 767px) {
+	/* PCグローバルナビゲーション非表示
+	----------------------------------------------- */
+		/* ナビ */
+		.pc_nav_wrap{
+			display:none;
+		}
+
+
+	/* SP設定
+	----------------------------------------------- */
+		header{
+			position:relative;
+		}
+		#wrapper{
+		}
+
+
+	/* H1
+	----------------------------------------------- */
+		.header-h1 {
+			display: none;
+		}
+		.header-h1 h1 {
+			display: none;
+		}
+
+
+	/* SPハンバーガーメニュー
+	----------------------------------------------- */
+	.sp_drawer{
+		letter-spacing: 0em;
+	}
+	button.drawer-toggle.drawer-hamburger {
+		color: #5c392c;
+		background-color: #8ec9cb;
+	}
+	.drawer-hamburger-icon, .drawer-hamburger-icon::after, .drawer-hamburger-icon::before {
+    background-color: #5c392c !important;
+	}
+	.drawer-hamburger{
+		padding:10px !important;
+	}
+	.drawer-hamburger span.drawer-hamburger-p{
+		font-size:12px;
+		padding-top:12px;
+		display:block;
+	}
+	.drawer-nav {
+		background-color: #decdba !important;
+	}
+	.drawer-nav > ul{
+	}
+	.drawer-nav > ul > li{
+		line-height: 2.5;
+		letter-spacing: 0em;
+	}
+	.drawer-nav a {
+		font-size: 17px;
+		color: #5c392c;
+		display: block;
+		padding: 0 16px;
+	}
+	.drawer-nav a:hover {
+		background-color: #c2aa8f;
+		text-decoration: none;
+	}
+	.drawer-nav a span{
+		font-size: 11px;
+		margin-left: 8px;
+	}
+
+	.nav_tel a{
+		background-color: #7b513d;
+		font-size: 18px;
+		color: #ffffff;
+		display: block;
+		padding: 0 16px;
+	}
+	.nav_tel a:hover{
+		background-color: #926752;
+		text-decoration: none;
+	}
+
+	.nav_web a {
+		background-color: #de8161;
+		font-size: 18px;
+		color: #5c392c;
+		display: block;
+		padding: 0 16px;
+	}
+	.nav_web a:hover {
+		background-color: #e78b6c;
+		text-decoration: none;
+	}
+
+
+	/* 予約ボタン
+	----------------------------------------------- */
+		.yoyaku_banner_01 a {
+			display: none;
+		}
+}
+
+
+
+
+
+/* ================================================================================
+
+	フッター
+
+================================================================================ */
+/* PC */
+@media (min-width: 768px) {
+	footer .streetview {
+		position: relative;
+		z-index: 0;
+		margin: 0 0 -240px 0;
+		padding: 17px 0 0 0;
+		background: url(../img/footer_line.png) center top repeat-x;
+	}
+	footer .streetview_sp {
+		display: none;
+	}
+	footer .f_wrap {
+		position: relative;
+		z-index: 10;
+		text-align: center;
+		height: 537px;
+		background: url(../img/bg_footer.png) center top no-repeat;
+	}
+	footer .f_wrap .yoyaku_banner_02 a {
+		position: absolute;
+		z-index: 0;
+		top: 0;
+		left: 50%;
+		margin-top: 200px;
+		margin-left: 270px;
+	}
+	footer .f_wrap .yoyaku_banner_02 a:hover {
+		opacity: 0.7;
+		-webkit-transition: 0.3s ease-out 0s;
+		transition: 0.3s ease-out 0s;
+	}
+	footer .f_wrap .line_at {
+		position: absolute;
+		z-index: 0;
+		top: 0;
+		left: 50%;
+		margin-top: 186px;
+		margin-left: -460px;
+	}
+	footer .f_wrap .f_logo {
+		padding: 160px 0 0 0;
+	}
+	footer .f_wrap .f_address {
+		font-size: 14px;
+		padding: 20px 0 0 0;
+	}
+	footer .f_wrap .f_tel {
+		font-size: 30px;
+		font-weight: 700;
+		padding: 10px 0 20px 0;
+	}
+	footer .f_wrap .f_link {
+		color: #d56a49;
+		font-size: 13px;
+	}
+	footer .f_wrap .f_link a {
+		color: #d56a49;
+		font-size: 13px;
+	}
+	footer .f_wrap .f_copy {
+		font-size: 11px;
+		padding: 20px 0 0 0;
+	}
+	footer .f_wrap .friend-botan {
+	    display:none;
+	}
+
+	/* シェアボタン */
+	footer .addtoany_shortcode > div{
+		display:none;
+	}
+}
+
+
+/* SP */
+@media (max-width: 767px) {
+	footer .streetview {
+		display: none;
+	}
+	footer .streetview_sp {
+		margin: 0 auto;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	footer .f_wrap {
+		text-align: center;
+		background-color: #decdba;
+		padding: 20px;
+	}
+	footer .f_wrap .yoyaku_banner_02 a {
+	}
+	footer .f_wrap .yoyaku_banner_02 a:hover {
+		opacity: 0.7;
+		-webkit-transition: 0.3s ease-out 0s;
+		transition: 0.3s ease-out 0s;
+	}
+	footer .f_wrap .f_logo {
+	}
+	footer .f_wrap .f_address {
+		font-size: 14px;
+		padding: 30px 0 0 0;
+	}
+	footer .f_wrap .f_tel {
+		font-size: 30px;
+		font-weight: 700;
+		padding: 10px 0 20px 0;
+	}
+	footer .f_wrap .f_link {
+		color: #d56a49;
+		font-size: 13px;
+		letter-spacing: 0em;
+	}
+	footer .f_wrap .f_link a {
+		color: #d56a49;
+		font-size: 13px;
+	}
+	footer .f_wrap .f_copy {
+		font-size: 11px;
+		padding: 20px 0 0 0;
+	}
+	footer .f_wrap .line_at{
+	    display:none;
+	}
+
+
+	/* シェアボタン */
+	footer .addtoany_shortcode > div{
+		text-align:center;
+		display:block;
+		padding:8px 0;
+		background-color: #decdba;
+	}
+}
+
+
+
+
+
+/* ================================================================================
+
+	ページトップボタン
+
+================================================================================ */
+/* PC */
+@media (min-width: 768px) {
+	#page-top {
+		position: fixed;
+		z-index: 9999;
+		right: 10px;
+	}
+	#page-top a {
+		background-image: url(../img/pagetop.png);
+		background-size:contain;
+		width: 51px;
+		height: 84px;
+		display: block;
+		text-indent: -9999px;
+	}
+	#page-top a:hover {
+		opacity: 0.7;
+		-webkit-transition: 0.3s ease-out 0s;
+		transition: 0.3s ease-out 0s;
+	}
+}
+
+/* SP */
+@media (max-width: 767px) {
+	#page-top {
+		position: fixed;
+		z-index: 9999;
+		bottom: 0px;
+		right: 8px;
+	}
+	#page-top a {
+		background-image: url(pagetop.png);
+		background-size: contain;
+		width: 40px;
+		height: 66px;
+		display: block;
+		text-indent: -9999px;
+	}
+	#page-top a:hover {
+		opacity: 0.7;
+		-webkit-transition: 0.3s ease-out 0s;
+		transition: 0.3s ease-out 0s;
+	}
+}
+
+
+
+
+
+/* ================================================================================
+
+	パンくずナビ
+
+================================================================================ */
+	#breadcrumb-nav {
+		background-color: transparent;
+	}
+	.breadcrumb > li{
+		display:inline-block;
+	}
+	.breadcrumb > li + li:before {
+		padding: 0 5px;
+		content: '>';
+	}
+	#breadcrumb-nav .breadcrumb {
+		margin-top: 16px;
+		margin-bottom: 50px;
+	}
+	#breadcrumb-nav .breadcrumb li {
+		font-size: 14px;
+	}
+	#breadcrumb-nav .breadcrumb li:before {
+		padding: 0 10px;
+	}
+	#breadcrumb-nav .breadcrumb li a {
+	}
+	#breadcrumb-nav .breadcrumb li a .glyphicon {
+		margin-right: 1em;
+	}
+
+
+/* PC設定
+----------------------------------------------- */
+@media (min-width: 768px) {
+	#breadcrumb-nav{
+		max-width:1000px;
+		width:100%;
+		margin:0 auto;
+	}
+}
+
+
+/* SP設定
+----------------------------------------------- */
+@media (max-width: 767px) {
+	#breadcrumb-nav{
+		width:100%;
+		padding:0 16px;
+	}
+}

@@ -14,7 +14,7 @@
     <link rel="stylesheet" type="text/css" href="assets/display/css/cate.css" media="all"/>
     <!-- ipadのcss -->
     <link rel="stylesheet" type="text/css" href="assets/display/css/ipad.css" media="all"/>
-
+    
     <script src="{{asset('assets/display/js/jquery-1.11.3.min.js')}}" type="text/javascript"></script>
     <!-- font-awesomeアイコン -->
     <link href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">

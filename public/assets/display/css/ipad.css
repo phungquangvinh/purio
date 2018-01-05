@@ -5,8 +5,101 @@
 	ipad用css
 
 ================================================================================ */
-
+#row_04 {
+	display: flex;
+}
 footer .streetview {
   margin: 0 auto !important;
   text-align: center !important;
+}
+@media only screen and (max-width: 1024px) {
+	.pc_nav {
+		position: relative;
+    	left: 100px;
+	}
+	.dish {
+		margin-top: 400px;
+		margin-left: 200px;
+	}
+	.yoyaku_banner_01 a {
+		margin-top: 675px;
+		margin-left: -480px;
+	}
+	.pg-2-2-3 {
+		background-size: 170%;
+    	background-position: center;
+	}
+	#pg-2-2 {
+
+	}
+	#row_03, #row_04{
+		width: 100%;
+	}
+	#row_04 .item_06{
+		width: 100%;
+	}
+	#row_04 .item_07 img {
+		width: 90%;
+	}
+	#page-top {
+		width: 4%;
+    	left: 960px;
+	}
+	.right.carousel-control {
+		display: none;
+	}
+}
+@media only screen and (max-width: 768px){
+	.dish {
+		margin-top: 250px;
+		margin-left: 100px;
+	}
+	.pc_nav {
+		left: 200px;
+	}
+	.yoyaku_banner_01 a {
+		margin-left: -360px;
+	}
+	.container {
+		height: auto;
+	}
+	.pc_nav_wrap {
+		display: none;
+	}
+	.pg-2-2-3 {
+		background-size: cover;
+		background-position: 0;
+	}
+	#row_03 {
+		display: flex;
+	}
+	#row_05 {
+		width: 100%;
+	}
+	#row_06 {
+		width: 100%;
+	}
+	#pgc-2-4-0, #pgc-2-4-1, #pgc-2-4-2 {
+		width: 33%;
+	}
+	#pgc-2-4-0 img, #pgc-2-4-1 img, #pgc-2-4-2 img {
+		width: 100%;
+	}
+	#row_03 .item_05 .huki {
+		left: 0;
+	}
+}
+@media only screen and (max-width: 425px){
+	.dish {
+		margin: 0 auto;
+	}
+	#pg-2-3 {
+		padding-top: 0;
+	}
+	#pg-2-5 {
+		padding-bottom: 0;
+	}
+	#row_03, #row_04 {
+		display: inline-block;
+	}
 }

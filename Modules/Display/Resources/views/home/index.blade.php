@@ -143,7 +143,7 @@
 
 
         <div id="pg-2-3" class="panel-grid panel-has-style">
-            <div id="row_04" class="panel-row-style panel-row-style-for-2-3" style="display: flex;">
+            <div id="row_04" class="panel-row-style panel-row-style-for-2-3">
                 <div id="pgc-2-3-0" class="panel-grid-cell">
                     <div id="panel-2-3-0-0" class="so-panel widget widget_sow-editor panel-first-child panel-last-child" data-index="5">
                         <div class="item_06 panel-widget-style panel-widget-style-for-2-3-0-0">

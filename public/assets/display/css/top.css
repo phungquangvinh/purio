@@ -48,7 +48,8 @@
 		background:url() center top no-repeat;
 		display:block;
 	}
-	.inner_wrap{
+	.sp_logo {
+		display: none;
 	}
 }
 

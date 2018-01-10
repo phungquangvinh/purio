@@ -7,7 +7,7 @@
 <header>    
     <!-- ====  PC用ナビ  ======================================================== -->
     <div class="pc_nav_wrap">
-        <div class="pc_nav">
+        <div class="pc_nav" id="mypc_nav">
             <ul class="clearfix">
                 <li><a href="#"><img src="assets/display/img/gnavi_logo.png" alt="ホーム" /></a></li>
                 <li>神奈川県大和市南林間1-4-4<br>メゾン南林間7店舗B<br>11:00～22:00(L.O.21:30)<br>定休日：木曜日</li>
@@ -19,15 +19,25 @@
                 <li><a href="#"><img src="assets/display/img/gnavi_06.png" alt="ギャラリー" /></a></li>
                 <li><a href="#"><img src="assets/display/img/gnavi_07.png" alt="アクセス" /></a></li>
                 <li><a href="#"><img src="assets/display/img/gnavi_08.png" alt="ブログ" /></a></li>
+                <li><a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a></li>
             </ul>
         </div>
-    </div>
+    </div>    
+    <script type="text/javascript">
+        function myFunction() {
+            var x = document.getElementById("mypc_nav");
+            if (x.className === "pc_nav") {
+                x.className += " responsive";
+            } else {
+                x.className = "pc_nav";
+            }
+        }
+    </script>
     <!-- ====  ISの上の画像  ======================================================== -->
     
     <div class="dish">
         <a href="#" target="self"><img src="assets/display/img/top_img_14.png" alt="null" /></a>
     </div>
-
     <!-- ====  予約ボタン  ======================================================== -->
     <div class="yoyaku_banner_01">
     <a href="https://www.sabotencafe.com/booking/" class="hvr-wobble-bottom"><img src="assets/display/img/yoyaku_banner_01.png" alt="予約はこちら" /></a>
@@ -39,10 +49,14 @@
         
     </div>
     <!-- ====  メイン画像  ======================================================== -->
-
+        <div class="sp_logo">
+            <img src="assets/display/img/sp_logo.png" alt="さぼてんcafé">
+        </div>
+        
         <div class="main_top">
             <div class="catch_copy"></div>
         </div>
+
     <div class="container">
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
@@ -53,7 +67,6 @@
           <li data-target="#myCarousel" data-slide-to="3"></li>
           <li data-target="#myCarousel" data-slide-to="4"></li>
         </ol>
-
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
           <div class="item active">
@@ -80,12 +93,12 @@
         <!-- Left and right controls -->
         <a class="left carousel-control" href="#myCarousel" data-slide="prev"
         style="background-image: none;">
-          <span class="glyphicon glyphicon-chevron-left" style="font-size: 20px"></span>
+          <span class="glyphicon glyphicon-chevron-left"></span>
           <span class="sr-only">Previous</span>
         </a>
         <a class="right carousel-control" href="#myCarousel" data-slide="next"
         style="background-image: none; right: -80px;">
-          <span class="glyphicon glyphicon-chevron-right" style="font-size: 20px"></span>
+          <span class="glyphicon glyphicon-chevron-right"></span>
           <span class="sr-only">Next</span>
         </a>
       </div>

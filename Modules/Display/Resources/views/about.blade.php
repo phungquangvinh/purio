@@ -7,36 +7,28 @@
 
     <div id="wrapper">
         <header>
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <link rel="stylesheet" href="assets/display/css/bootstrap.min.css">
             <div class="pc_nav_wrap">
                 <div class="pc_nav">
                     <ul class="clearfix">
-                        <li><a href="https://www.sabotencafe.com"><img src="assets/display/img/gnavi_logo.png"
-                                                                       alt="ホーム"></a></li>
+                        <li><a href="index.php"><img src="assets/display/img/gnavi_logo.png" alt="ホーム"></a></li>
                         <li>神奈川県大和市南林間1-4-4<br>メゾン南林間7店舗B<br>11:00～22:00(L.O.21:30)<br>定休日：木曜日</li>
-                        <li><a href="https://www.sabotencafe.com"><img src="assets/display/img/gnavi_01.png" alt="ホーム"></a>
-                        </li>
-                        <li><a href="https://www.sabotencafe.com/about/"><img src="assets/display/img/gnavi_02.png"
-                                                                              alt="当店について"></a></li>
-                        <li><a href="https://www.sabotencafe.com/lunch/"><img src="assets/display/img/gnavi_03.png"
-                                                                              alt="カフェ・ランチ"></a></li>
-                        <li><a href="https://www.sabotencafe.com/dinner/"><img src="assets/display/img/gnavi_04.png"
-                                                                               alt="ディナー・コース"></a></li>
-                        <li><a href="https://www.sabotencafe.com/drink/"><img src="assets/display/img/gnavi_05.png"
-                                                                              alt="ドリンク"></a></li>
-                        <li><a href="https://www.sabotencafe.com/gallery/"><img src="assets/display/img/gnavi_06.png"
-                                                                                alt="ギャラリー"></a></li>
-                        <li><a href="https://www.sabotencafe.com/access/"><img src="assets/display/img/gnavi_07.png"
-                                                                               alt="アクセス"></a></li>
-                        <li><a href="https://www.sabotencafe.com/blog/"><img src="assets/display/img/gnavi_08.png"
-                                                                             alt="ブログ"></a></li>
+                        <li><a href="index.php"><img src="assets/display/img/gnavi_01.png" alt="ホーム"></a></li>
+                        <li><a href="about/"><img src="assets/display/img/gnavi_02.png" alt="当店について"></a></li>
+                        <li><a href="lunch/"><img src="assets/display/img/gnavi_03.png" alt="カフェ・ランチ"></a></li>
+                        <li><a href="dinner/"><img src="assets/display/img/gnavi_04.png" alt="ディナー・コース"></a></li>
+                        <li><a href="drink/"><img src="assets/display/img/gnavi_05.png" alt="ドリンク"></a></li>
+                        <li><a href="gallery/"><img src="assets/display/img/gnavi_06.png" alt="ギャラリー"></a></li>
+                        <li><a href="access/"><img src="assets/display/img/gnavi_07.png" alt="アクセス"></a></li>
+                        <li><a href="blog/"><img src="assets/display/img/gnavi_08.png" alt="ブログ"></a></li>
                     </ul>
                 </div>
             </div>
 
             <div class="yoyaku_banner_01">
-                <a style="margin-top: 750px;" href="https://www.sabotencafe.com/booking/" class="hvr-wobble-bottom"><img
-                            src="assets/display/img/yoyaku_banner_01.png" alt="予約はこちら"></a>
+                <a style="margin-top: 750px;" href="booking/" class="hvr-wobble-bottom">
+                    <img src="assets/display/img/yoyaku_banner_01.png" alt="予約はこちら">
+                </a>
             </div>
 
             <div class="header-h1">
@@ -52,7 +44,7 @@
             <div class="cate_bg_01"></div>
             <nav id="breadcrumb-nav">
                 <ul class="breadcrumb">
-                    <li><a href="https://www.sabotencafe.com">HOME</a></li>
+                    <li><a href="#">HOME</a></li>
                     <li>
                         当店について
                     </li>
@@ -168,7 +160,7 @@
                                             <div class="siteorigin-widget-tinymce textwidget">
                                                 <p>
                                                     <a class="hvr-wobble-bottom"
-                                                       href="https://www.sabotencafe.com/lunch/">
+                                                       href="lunch/">
                                                         <img class="iv iv-swing animated swing"
                                                              src="assets/display/img/cate_banner_04.png" alt="ランチ"
                                                              style="opacity: 1;"></a></p>
@@ -184,7 +176,7 @@
                                             <div class="siteorigin-widget-tinymce textwidget">
                                                 <p>
                                                     <a class="hvr-wobble-bottom"
-                                                       href="https://www.sabotencafe.com/dinner/">
+                                                       href="dinner/">
                                                         <img class="iv iv-swing animated swing"
                                                              src="assets/display/img/cate_banner_01.png" alt="ディナー・コース"
                                                              style="opacity: 1; margin-left: 100px"></a></p>
@@ -201,35 +193,21 @@
     </div>
     <footer>
 
-
-        <!-- 固定ページを出力 -->
-        <div class="streetview">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m0!4v1501576250852!6m8!1m7!1sF%3A-bih7lPdFE1A%2FWXqgeH-16SI%2FAAAAAAAAv3Q%2FDuEsnslbpyod-wnREDaFET7RqcNApWwSgCLIBGAYYCw!2m2!1d35.493782212128!2d139.44808307768!3f332.4115826637763!4f-26.057152533355143!5f0.7820865974627469"
-                    allowfullscreen="allowfullscreen" width="300" height="150" frameborder="0"></iframe>
-        </div>
-
-        <div class="streetview_sp">
-            <iframe style="width: 90%; height: 300px; border: 0;"
-                    src="https://www.google.com/maps/embed?pb=!1m0!4v1501576250852!6m8!1m7!1sF%3A-bih7lPdFE1A%2FWXqgeH-16SI%2FAAAAAAAAv3Q%2FDuEsnslbpyod-wnREDaFET7RqcNApWwSgCLIBGAYYCw!2m2!1d35.493782212128!2d139.44808307768!3f332.4115826637763!4f-26.057152533355143!5f0.7820865974627469"
-                    allowfullscreen="allowfullscreen" width="300" height="150" frameborder="0"></iframe>
-        </div>
-
         <div class="f_wrap">
 
             <div class="line_at hvr-bounce-in"><img class="iv iv-rubberBand"
-                                                    src="https://www.sabotencafe.com/wordpress/wp-content/themes/grbs-beta/img/saboten_line.png"
+                                                    src="assets/display/img/saboten_line.png"
                                                     alt="LINE@登録はこちら！" style="opacity: 1;" width="194" height="188">
             </div>
 
             <div class="yoyaku_banner_02">
-                <a class="hvr-bounce-in" href="https://www.sabotencafe.com/booking/">
+                <a class="hvr-bounce-in" href="booking/">
                     <img class="iv iv-rubberBand"
-                         src="https://www.sabotencafe.com/wordpress/wp-content/themes/grbs-beta/img/yoyaku_banner_02.png"
+                         src="assets/display/img/yoyaku_banner_02.png"
                          alt="予約こちら" style="opacity: 1;" width="194" height="188"></a></div>
 
-            <div class="f_logo"><a href="https://www.sabotencafe.com/"><img class="alignnone size-full wp-image-149"
-                                                                            src="assets/display/img/f_logo.png"
-                                                                            alt="さぼてんcafe" width="174" height="101"></a>
+            <div class="f_logo">
+                <a href="#"><img class="alignnone size-full wp-image-149" src="assets/display/img/f_logo.png"       alt="さぼてんcafe" width="174" height="101"></a>
             </div>
 
             <div class="f_address">〒242-0006　神奈川県大和市南林間1-4-4　メゾン南林間7店舗B<br>
@@ -240,18 +218,19 @@
             <div class="f_tel"><a href="tel:0462891042"><i class="fa fa-phone fa-fw" aria-hidden="true"></i>046-289-1042</a>
             </div>
 
-            <div class="friend-botan"><a href="https://line.me/R/ti/p/%40zed8448o"><img alt="友だち追加"
-                                                                                        src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png"
-                                                                                        height="36" border="0"></a><br>
+            <div class="friend-botan">
+                <a href="https://line.me/R/ti/p/%40zed8448o">
+                    <img alt="友だち追加" src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" height="36" border="0">
+                </a><br>
             </div>
 
-            <div class="f_link"><a href="https://www.sabotencafe.com/">トップページ</a>｜<a
-                        href="https://www.sabotencafe.com/about/">当店について</a>｜<a
-                        href="https://www.sabotencafe.com/lunch/">カフェ・ランチ</a>｜<a
-                        href="https://www.sabotencafe.com/dinner/">ディナー・コース</a>｜<a
-                        href="https://www.sabotencafe.com/drink/">ドリンク</a>｜<a
-                        href="https://www.sabotencafe.com/gallery/">ギャラリー</a>｜<a
-                        href="https://www.sabotencafe.com/access/">アクセス</a>｜<a href="https://www.sabotencafe.com/blog/">ブログ</a>
+            <div class="f_link"><a href="index.php">トップページ</a>｜<a
+                        href="about/">当店について</a>｜<a
+                        href="lunch/">カフェ・ランチ</a>｜<a
+                        href="dinner/">ディナー・コース</a>｜<a
+                        href="drink/">ドリンク</a>｜<a
+                        href="gallery/">ギャラリー</a>｜<a
+                        href="access/">アクセス</a>｜<a href="blog/">ブログ</a>
             </div>
             <div class="f_copy">copyright © さぼてんcafé all rights reserved.</div>
         </div>    <!-- /固定ページを出力 -->

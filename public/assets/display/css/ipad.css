@@ -71,14 +71,14 @@ footer .streetview {
 	.dish {
 		display: none;
 	}
-	.sp_logo {
-		display: block;
-	}
 	.yoyaku_banner_01 a {
 		margin-left: -360px;
 	}
 	.container {
 		height: auto;
+	}
+	.pc_nav {
+		left: 0;
 	}
 	.pc_nav a:not(:first-child) {display: none;}
 	  .pc_nav a.icon {
@@ -122,6 +122,9 @@ footer .streetview {
 @media only screen and (max-width: 425px){
 	.dish {
 		margin: 0 auto;
+	}
+	.sp_logo {
+		display: block;
 	}
 	#pg-2-3 {
 		padding-top: 0;

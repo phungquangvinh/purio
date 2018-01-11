@@ -41,7 +41,7 @@
     <link rel="stylesheet" type="text/css" href="assets/display/css/animate.css" media="all"/>
     <script type="text/javascript" src="assets/display/js/jquery.inview.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/display/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="assets/display/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/display/js/analytics.js"></script>
     <script type="text/javascript">
         $(function(){
@@ -73,18 +73,17 @@
 <footer style="background: url(assets/display/img/footer_line.png) center top no-repeat; background-size: 100% auto; padding-top: 50px">
     <div class="f_wrap">
         <div class="line_at hvr-bounce-in">
-            <img class="iv iv-rubberBand" src="assets/display/img/saboten_line.png"
-                                                alt="LINE@登録はこちら！" width="194" height="188" style="opacity: 1;"></div>
+            <img class="iv iv-rubberBand" src="assets/display/img/saboten_line.png" alt="LINE@登録はこちら！" width="194" height="188" style="opacity: 1;"></div>
 
         <div class="yoyaku_banner_02">
-            <a class="hvr-bounce-in" href="https://www.sabotencafe.com/booking/">
+            <a class="hvr-bounce-in" href="booking/">
                 <img class="iv iv-rubberBand"
                      src="assets/display/img/yoyaku_banner_02.png"
                      alt="予約こちら" width="194"
                      height="188" style="opacity: 1;"></a>
         </div>
 
-        <div class="f_logo"><a href="https://www.sabotencafe.com/">
+        <div class="f_logo"><a href="">
                 <img class="alignnone size-full wp-image-149"
                      src="assets/display/img/f_logo.png"
                      alt="さぼてんcafe" width="174" height="101"></a>
@@ -99,12 +98,12 @@
                 <img height="36" border="0" alt="友だち追加"
                      src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png"></a><br>
         </div>
-        <div class="f_link"><a href="https://www.sabotencafe.com/">トップページ</a>｜<a
-                    href="https://www.sabotencafe.com/about/">当店について</a>｜<a href="https://www.sabotencafe.com/lunch/">カフェ・ランチ</a>｜<a
-                    href="https://www.sabotencafe.com/dinner/">ディナー・コース</a>｜<a
-                    href="https://www.sabotencafe.com/drink/">ドリンク</a>｜<a href="https://www.sabotencafe.com/gallery/">ギャラリー</a>｜<a
-                    href="https://www.sabotencafe.com/access/">アクセス</a>｜<a
-                    href="https://www.sabotencafe.com/blog/">ブログ</a></div>
+        <div class="f_link"><a href="index.php">トップページ</a>｜<a
+                    href="about/">当店について</a>｜<a href="lunch/">カフェ・ランチ</a>｜<a
+                    href="dinner/">ディナー・コース</a>｜<a
+                    href="drink/">ドリンク</a>｜<a href="gallery/">ギャラリー</a>｜<a
+                    href="access/">アクセス</a>｜<a
+                    href="blog/">ブログ</a></div>
         <div class="f_copy">copyright © さぼてんcafé all rights reserved.</div>
     </div>  <!-- /固定ページを出力 -->
     <!-- ページトップボタン -->
